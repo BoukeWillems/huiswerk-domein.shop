@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* { margin: 0;}
+* {
+    margin: 0;
+}
+
+* {
+    max-width: 1000px;
+}
 
 /* . grijs #899CA0 en donkergroen #1C2B32 */
 
@@ -17,13 +23,12 @@ Table of Contents:
 ////////////////////////////////////////////////////////////////////////*/
 
 
-
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
 body {
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /*////////////////////////
@@ -31,7 +36,7 @@ body {
 ////////////////////////*/
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -44,85 +49,246 @@ p {
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
 header {
-    border: 2px solid red;
+
     text-align: center;
+    height: 500px;
+    color: #1C2B32;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
     background-position: center;
-    padding-top: 300px;
-    padding-bottom: 100px;
-    color: #1C2B32;
-    position: relative;
-    /*max-width: 1000px;*/
 
 }
 
-
-.header_text {
+.header-content {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.header_text h1 {
-    font-size: 110px;
 
 
 }
 
-.header_text p {
+.header-content h1 {
 
-    font-size: 15px;
+    font-size: 65px;
+    margin-top: 80px;
 
 
 }
-.availability_check_form form {
-    display: flex;
-    justify-content: center; /* Horizontaal centreren van items */
+
+.header-content p {
+    font-size: 10px;
+    margin-bottom: 8px;
 }
 
-.availability_check_form input[type="text"] {
-    border-top-left-radius: 10px; /* Ronde hoeken aan de bovenkant van het tekstvak */
-    border-bottom-left-radius: 10px; /* Ronde hoeken aan de onderkant van het tekstvak */
-    border: 1px solid #ccc; /* Rand om het tekstvak toevoegen */
-    padding: 10px; /* Binnenopvulling toevoegen */
+.searchbar {
+    border-radius: 20px;
+    overflow: hidden;
+
+
 }
 
-.availability_check_form button {
-    border-top-right-radius: 10px; /* Ronde hoeken aan de bovenkant van de knop */
-    border-bottom-right-radius: 10px; /* Ronde hoeken aan de onderkant van de knop */
-    background-color: #007bff; /* Achtergrondkleur van de knop */
-    color: #fff; /* Tekstkleur van de knop */
-    border: none; /* Rand van de knop verwijderen */
-    padding: 10px 20px; /* Binnenopvulling toevoegen */
+.search-bar {
+    margin: -5px;
+    padding: 10px 50px 10px 20px;
+    border: 1px solid #1C2B32;
+    background-color: transparent;
+    text-decoration: #1C2B32;
+    border-radius: 20px 0 0 20px;
+    font-size: 13px;
+    color: #1C2B32;
+    width: 150px;
 }
+
+.search-bar::placeholder {
+    color: #1C2B32;
+
+}
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    background-color: #1C2B32;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #1C2B32;
+    outline: none;
+    font-size: 12px;
+
+}
+
 /*///////////// 3.2 Testimonial /////////////*/
 
-.testimonial-section {
+main {
+    margin-top: 10px;
+    max-width: 800px;
+    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    margin-left: auto;
+    margin-right: auto;
 
+}
+
+
+.testimonial-section {
+    align-items: center;
+
+}
+
+.testimonial-section h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.box-1 p {
+
+    text-align: left;
+    font-size: 15px;
+    margin: -30px 0px 20px 40px;
+
+}
+
+
+.avatar-jane {
+    height: 44px;
+    width: 44px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.box-1 cite {
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -15px;
+}
+
+.box-1 {
+    padding: 80px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.box-2 {
+    margin-top: 50px;
+    padding: 80px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.5);
+}
+
+.box-2 p {
+
+    text-align: left;
+    font-size: 15px;
+    margin: -30px 0px 20px 40px;
+
+}
+
+.avatar-john {
+    height: 44px;
+    width: 44px;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.box-2 cite {
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -15px;
 }
 
 /*///////////// 3.3 Support /////////////*/
 
 .support-section {
+    margin-top: 20px;
+}
+
+.callcenter-img {
+    border-radius: 15px;
+    max-width: 800px;
 
 }
 
+.support-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.support-section p {
+    font-size: 12px;
+}
+
+.contact-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #1C2B32;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #1C2B32;
+    outline: none;
+    font-size: 13px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+/* Ik krijg het niet voor elkaar de details net zo te stylen als het voorbeeld. */
 .faq-section {
+    margin-bottom: 50px;
+
+}
+
+article h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+details p {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+summary {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+
+details[open] {
+    background-color: #899CA0;
+    border-radius: 10px;
 
 }
 
 /*///////////// 3.5 Footer /////////////*/
 
 footer {
+    padding: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: #1C2B32;
 
 }
 
